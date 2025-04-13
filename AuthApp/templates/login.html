@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ app_name }} Login</title>
+</head>
+<body>
+    <h1>Login to {{ app_name }}</h1>
+    <ul>
+        {% for service, url in login_urls.items() %}
+            <li><a href="{{ url }}">Login with {{ service|capitalize }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
